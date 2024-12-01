@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 25% 25% 25%;
+        height: 500px;
+        width: 500px;
+      }
+      .child {
+        text-align: center;
+      }
+      .child:nth-child(1) {
+        background-color: antiquewhite;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+      }
+      .child:nth-child(2) {
+        background-color: rgb(231, 87, 26);
+      }
+      .child:nth-child(3) {
+        background-color: rgb(231, 35, 162);
+      }
+      .child:nth-child(4) {
+        background-color: rgb(215, 250, 234);
+      }
+      .child:nth-child(5) {
+        background-color: rgb(243, 250, 215);
+      }
+      .child:nth-child(6) {
+        background-color: rgb(10, 2, 8);
+      }
+      .child:nth-child(7) {
+        background-color: rgb(33, 137, 71);
+      }
+      .child:nth-child(8) {
+        background-color: rgb(102, 73, 208);
+      }
+      .child:nth-child(9) {
+        background-color: rgb(31, 203, 28);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+    </div>
+  </body>
+</html>
